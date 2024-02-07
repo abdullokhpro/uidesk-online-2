@@ -1,0 +1,43 @@
+#newsletter {
+    padding-top: 120px;
+    padding-bottom: 150px;
+}
+
+.newsletter__title {
+    text-align: center;
+}
+
+.newsletter__text {
+    text-align: center;
+    color: #3B433E;
+}
+
+.newsletter__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+#email {
+    padding: 18px 166px 18px 20px; 
+    font-size: 18px;
+    color: #8A8A8A;
+    border-radius: 50px;
+    border: 0.5px solid #d3cfcf;
+}
+
+@media (max-width: 420px) {
+    #email {
+        width: 100%;
+        padding-right: 0px;
+    }
+}
+
+.dark #newsletter {
+    background-color: black;
+}
+
+.dark #newsletter * {
+    color: white;
+}

@@ -1,0 +1,33 @@
+#vegetables {
+    padding-bottom: 80px;
+}
+
+.vegetables__container {
+    display: flex;
+    gap: 69px;
+}
+
+
+@media (max-width: 1200px) {
+    .vegetables__container {
+        flex-direction: column;
+    }
+
+    .vegetables__left img {
+        width: 100%;
+    }
+
+    .vegetables__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.dark #vegetables {
+    background-color: black;
+}
+
+.dark #vegetables * {
+    color: white;
+}

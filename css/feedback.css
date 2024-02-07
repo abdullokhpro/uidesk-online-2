@@ -1,0 +1,60 @@
+#feedback {
+    padding-top: 70px;
+    padding-bottom: 145px;
+    background-color: #d5d1d1;
+}
+
+.feedback__title {
+    text-align: center;
+}
+
+.feedback__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 145px;
+}
+
+.feedback__card {
+    width: calc(50% - 12.5px);
+    padding: 40px 31px 64px 27px;
+    border: 0.5px solid #EBEBEB;
+    border-radius: 30px;    
+}
+
+.feedback__card__top {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+    margin-bottom: 32px;
+}
+
+.feedback__card__title {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.feedback__card__position {
+    font-size: 14px;
+    color: #888A9A;
+}
+
+.feedback__card__text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #181D19;
+}
+
+@media (max-width: 850px) {
+    .feedback__card {
+        width: 100%;
+    }
+}
+
+.dark #feedback {
+    background-color: black;
+}
+
+.dark #feedback * {
+    color: white;
+}

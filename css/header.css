@@ -1,0 +1,138 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    padding: 40px 0;
+    padding-bottom: 20px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.show-navshrink {
+    box-shadow: 0px 0px 10px var(--primary-color);
+    padding: 15px 0;
+}
+
+.header__nav-left {
+    gap: 160px;
+}
+
+.header__nav-right {
+    gap: 50px;
+}
+
+.nav__list {
+    gap: 40px;
+}
+
+.nav__link  {
+    position: relative;
+    border-bottom: 1px solid transparent;
+    padding: 5px 0;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+.nav__link:hover {
+    color: var(--primary-color);
+}
+
+.nav__link--active {
+    color: var(--primary-color);
+}
+
+.header__nav-buttons {
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+#mode-btn {
+    border: none;
+    background-color: #fff;
+}
+
+.nav-buttons__cart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-buttons__order {
+    padding: 14px 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    background-color: #494949;
+    transition: 0.3s, box-shadow 0.2s ease;
+}
+
+.nav-buttons__order:hover {
+    background-color: #64BB47;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.nav-buttons__menu {
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+
+@media (max-width: 1190px) {
+    .nav__list {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        z-index: 1000;
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        box-shadow: 0px 0px 15px var(--primary-color);
+        background-color: #fff;
+        transition: 0.4s;
+    }
+
+    .show-nav__list {
+        left: 0;
+    }
+
+    .nav-buttons__menu {
+        display: block;
+    }
+
+    .nav-buttons__order {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 515px) {
+    .nav-buttons__cart {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .nav-buttons__order {
+        display: none;
+    }
+}
+
+.dark #navshrink {
+    background-color: black;
+}
+
+.dark #navshrink * {
+    color: white;
+}

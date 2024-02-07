@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>uidesk</title>
+  </head>
+  <body>
+    <div id="backtop">
+      <a href="#header">
+        <img
+          src="images/backtop/up-line.svg"
+          alt="here is the icon to press to up of the page"
+          width="24"
+        />
+      </a>
+    </div>
+    <header id="header">
+      <nav id="navshrink">
+        <div class="container df">
+          <div class="header__nav-left df">
+            <div class="header__nav-logo">
+              <a href="index.html">
+                <img
+                  src="images/header/nav-logo.svg"
+                  alt="here is the logo of website"
+                  width="94"
+                  height="39"
+                />
+              </a>
+            </div>
+
+            <ul class="nav__list df" id="nav__list">
+              <li class="nav__item">
+                <a class="nav__link nav__link--active" href="#">Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">About</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Contact</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Testimonials</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__nav-right df">
+            <div class="header__nav-buttons df">
+              <button id="mode-btn">
+                <img
+                  src="images/header/light.svg"
+                  alt="here is the mode btn to conver website into light mode"
+                  width="26"
+                />
+              </button>
+              <div class="nav-buttons__cart">
+                <button class="nav__search decoration-btn">
+                  <svg
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.6613 9.08064C17.6613 13.8196 13.8196 17.6613 9.08064 17.6613C4.34168 17.6613 0.5 13.8196 0.5 9.08064C0.5 4.34168 4.34168 0.5 9.08064 0.5C13.8196 0.5 17.6613 4.34168 17.6613 9.08064Z"
+                      stroke="#181D19"
+                    />
+                    <path
+                      d="M19.9999 20.0001L15.2343 15.2344"
+                      stroke="#181D19"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+                <button class="nav__cart decoration-btn">
+                  <svg
+                    width="25"
+                    height="20"
+                    viewBox="0 0 25 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.55543 15.7092C5.37053 15.7092 4.41003 16.6698 4.41003 17.8546C4.41003 19.0395 5.37058 20 6.55543 20C7.74033 20 8.70083 19.0395 8.70083 17.8546C8.70087 16.6698 7.74033 15.7092 6.55543 15.7092ZM6.55543 19.0465C5.89717 19.0465 5.36355 18.5129 5.36355 17.8547C5.36355 17.1964 5.89717 16.6628 6.55543 16.6628C7.2137 16.6628 7.74731 17.1964 7.74731 17.8547C7.74735 18.5129 7.2137 19.0465 6.55543 19.0465Z"
+                      fill="#181D19"
+                    />
+                    <path
+                      d="M15.6139 15.7092C14.429 15.7092 13.4685 16.6698 13.4685 17.8546C13.4685 19.0395 14.4291 20 15.6139 20C16.7988 20 17.7593 19.0395 17.7593 17.8546C17.7593 16.6698 16.7988 15.7092 15.6139 15.7092ZM15.6139 19.0465C14.9556 19.0465 14.422 18.5129 14.422 17.8547C14.422 17.1964 14.9556 16.6628 15.6139 16.6628C16.2722 16.6628 16.8058 17.1964 16.8058 17.8547C16.8058 18.5129 16.2722 19.0465 15.6139 19.0465Z"
+                      fill="#181D19"
+                    />
+                    <path
+                      d="M20.4529 3.19432C20.3537 3.08587 20.2178 3.01797 20.0715 3.0036L4.55306 2.78906L4.12398 1.47796C3.8217 0.601505 3.00095 0.00980987 2.0739 0H0.47676C0.213445 0 0 0.213445 0 0.47676C0 0.740075 0.213445 0.95352 0.47676 0.95352H2.0739C2.59227 0.964972 3.04873 1.29782 3.21814 1.78786L6.24556 10.9178L6.0072 11.4661C5.74133 12.1516 5.82118 12.9233 6.22174 13.5399C6.61847 14.1456 7.28591 14.5194 8.0096 14.5411H17.2826C17.5459 14.5411 17.7593 14.3277 17.7593 14.0644C17.7593 13.8011 17.5459 13.5876 17.2826 13.5876H8.00955C7.60087 13.5774 7.22467 13.3624 7.00835 13.0155C6.79445 12.6728 6.75051 12.2507 6.88918 11.8713L7.0799 11.4422L17.1157 10.3933C18.218 10.2719 19.1248 9.47013 19.3803 8.39091L20.5245 3.59949C20.5761 3.46152 20.5487 3.30634 20.4529 3.19432ZM18.4506 8.17641C18.2958 8.87113 17.706 9.38358 16.9965 9.43983L7.0799 10.4649L4.86296 3.74258L19.4756 3.95712L18.4506 8.17641Z"
+                      fill="#181D19"
+                    />
+                    <circle cx="21" cy="4" r="4" fill="#DC2825" />
+                  </svg>
+                </button>
+              </div>
+              <button class="nav-buttons__order">Order Now</button>
+              <button class="nav-buttons__menu" id="nav-buttons__menu">
+                <img
+                  src="images/header/menu-line.svg"
+                  alt="here is the icon of menu that shows list of items in navigation"
+                  width="24"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main  -->
+    <main id="main">
+      <!-- hero  -->
+      <section id="hero">
+        <div class="container hero__container">
+          <h1 class="hero__title">
+            Just <span class="hero__main__text">Eat healthy</span> food to live
+            a healthier life
+          </h1>
+          <p class="hero__text">
+            Enjoy a healthy life by eating healthy foods that have extraordinary
+            flavors that make your life healthier for today and in the future
+          </p>
+          <button class="hero__btn btn">Order Now</button>
+        </div>
+      </section>
+
+      <!-- choose  -->
+      <section id="choose">
+        <div class="container">
+          <h2 class="choose__title">Why Choose US?</h2>
+          <p class="choose__text">
+            Organic food is grown without the use of synthetic chemicals
+          </p>
+          <div class="choose__cards">
+            <div class="choose__card">
+              <img
+                src="images/choose/choose-form.svg"
+                alt="here is the icon for card"
+              />
+              <h3 class="choose__card__title">Easy to order</h3>
+              <p class="choose__card__text">
+                foods include fresh produce, meats as well as processed
+              </p>
+            </div>
+
+            <div class="choose__card">
+              <img
+                src="images/choose/choose-map.svg"
+                alt="here is the icon for card"
+              />
+              <h3 class="choose__card__title">Live Order</h3>
+              <p class="choose__card__text">
+                Place your online Order easily and get the food instantly
+              </p>
+            </div>
+
+            <div class="choose__card">
+              <img
+                src="images/choose/choose-leaf.png"
+                alt="here is the icon for card"
+              />
+              <h3 class="choose__card__title">100% Organic</h3>
+              <p class="choose__card__text">
+                Organic food is grown without the use of synthetic chemicals
+              </p>
+            </div>
+          </div>
+
+          <div class="choose__statistics">
+            <div class="choose__static">
+              <h3 class="choose__static__title">40+</h3>
+              <p class="choose__static__text">Food Partners</p>
+            </div>
+
+            <div class="choose__static">
+              <h3 class="choose__static__title">459+</h3>
+              <p class="choose__static__text">Trusted Clients</p>
+            </div>
+
+            <div class="choose__static">
+              <h3 class="choose__static__title">12k+</h3>
+              <p class="choose__static__text">Order Online</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about  -->
+      <section id="about">
+        <div class="container about__container">
+          <div class="about__left">
+            <h2 class="about__title subtitle">About US</h2>
+            <p class="about__text subtext">
+              Organic food is grown without the use of synthetic chemicals, such
+              as human-made pesticides and fertilizers, and does not contain
+              genetically modified organisms (GMOs). Organic foods include fresh
+              produce, meats, and dairy products as well as processed foods such
+              as crackers, drinks, and frozen meals.
+            </p>
+            <button class="about__btn btn">Learn More</button>
+          </div>
+          <div class="about__right">
+            <!-- <div class="about__right__img">
+              <img
+                src="images/about/about-img1.png"
+                alt="here is the image of food in about seciton"
+              />
+            </div>
+            <div class="about__right__img img--2">
+              <img
+                src="images/about/about-img2.png"
+                alt="here is the image of food in about seciton"
+              />
+            </div>
+            <div class="about__right__img img--3">
+              <img
+                src="images/about/about-img3.png"
+                alt="here is the image of food in about seciton"
+              />
+            </div> -->
+
+            <div class="about__right__first">
+              <img
+                src="images/about/about-img1.png"
+                alt="here is the image of website"
+              />
+              <img
+                src="images/about/about-img2.png"
+                alt="here is the image of website"
+              />
+            </div>
+
+            <div class="about__right__second">
+              <img src="images/about/about-img3.png" alt="image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- vegetables  -->
+      <section id="vegetables">
+        <div class="container vegetables__container">
+          <div class="vegetables__left">
+            <img
+              src="images/vegetables/vegetables-img.png"
+              alt="here is the image of vegetables"
+            />
+          </div>
+
+          <div class="vegetables__right">
+            <h2 class="vegetables__title subtitle">
+              Fresh Vegetables Every Day
+            </h2>
+            <p class="vegetables__text subtext">
+              Healthy life as informed declared we enjoy the margaret. Joy
+              horrible moreover man feelings own shy. Request norland neither
+              mistake for yet. Between the for morning assured country believe.
+            </p>
+
+            <button class="vegetables__btn btn">Learn More</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- chef -->
+      <section id="chef">
+        <div class="container chef__container">
+          <div class="chef__left">
+            <h2 class="chef__title subtitle">Cooked by the Best Chefs</h2>
+            <p class="chef__text subtext">
+              Believing neglected so so allowance existence departure in. In
+              design active temper be uneasy. Thirty for remove plenty regard
+              you summer though. He preference connection astonished on of ye.
+            </p>
+            <ul class="chef__list">
+              <li class="chef__item">
+                <img
+                  src="images/chef/checkmark-chef.svg"
+                  alt="icon"
+                  width="20"
+                />
+                A guaranteed delicious meal
+              </li>
+              <li class="chef__item">
+                <img
+                  src="images/chef/checkmark-chef.svg"
+                  alt="icon"
+                  width="20"
+                />
+                A guaranteed delicious meal
+              </li>
+              <li class="chef__item">
+                <img
+                  src="images/chef/checkmark-chef.svg"
+                  alt="icon"
+                  width="20"
+                />
+                A guaranteed delicious meal
+              </li>
+            </ul>
+          </div>
+
+          <div class="chef__right">
+            <img src="images/chef/chef.png" alt="here is the chef picture" />
+          </div>
+        </div>
+      </section>
+
+      <!-- dishes -->
+      <section id="dishes">
+        <div class="container">
+          <h2 class="dishes__title subtitle">Special Dishes for you</h2>
+          <p class="dishes__text subtext">
+            Made with premium & 100% Organic ingredients
+          </p>
+
+          <div class="dishes__cards">
+            <div class="dishes__card">
+              <img
+                src="images/dishes/dishes-green.png"
+                alt="here is the images of salad"
+                width="250"
+              />
+              <h3 class="dishes__card__title">Green Salad</h3>
+              <p class="dishes__card__text">
+                A salad combined witha delicious cut of bacon and mixed with
+                tasty and fresh sesome oil.
+              </p>
+            </div>
+
+            <div class="dishes__card">
+              <img
+                src="images/dishes/dishes-beef.png"
+                alt="here is the images of salad"
+                width="250"
+              />
+              <h3 class="dishes__card__title">Green Salad</h3>
+              <p class="dishes__card__text">
+                A salad combined witha delicious cut of bacon and mixed with
+                tasty and fresh sesome oil.
+              </p>
+            </div>
+
+            <div class="dishes__card">
+              <img
+                src="images/dishes/dishes-nut.png"
+                alt="here is the images of salad"
+                width="250"
+              />
+              <h3 class="dishes__card__title">Green Salad</h3>
+              <p class="dishes__card__text">
+                A salad combined witha delicious cut of bacon and mixed with
+                tasty and fresh sesome oil.
+              </p>
+            </div>
+          </div>
+
+          <div class="dishes__bottom">
+            <button class="dishes__btn btn">View All</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- feedback  -->
+      <secion id="feedback">
+        <div class="container">
+          <h2 class="feedback__title subtitle">Happy Clients Says</h2>
+          <div class="feedback__cards">
+            <div class="feedback__card">
+              <div class="feedback__card__top">
+                <img
+                  src="images/feedback/feedback-img1.png"
+                  alt="here is the images of person"
+                />
+
+                <div class="feedback__card__top__names">
+                  <h4 class="feedback__card__title">KHALIL NAZIR</h4>
+                  <p class="feedback__card__position">CEO of UI.Desk</p>
+                </div>
+              </div>
+              <p class="feedback__card__text">
+                Thirty for remove plenty regard you summer though. He preference
+                Partiality on or continuing in particular principles as. Do
+                believing oh disposing to supported allowance we.
+              </p>
+            </div>
+
+            <div class="feedback__card">
+              <div class="feedback__card__top">
+                <img
+                  src="images/feedback/feedback-img2.png"
+                  alt="here is the images of person"
+                />
+
+                <div class="feedback__card__top__names">
+                  <h4 class="feedback__card__title">KHALIL NAZIR</h4>
+                  <p class="feedback__card__position">CEO of UI.Desk</p>
+                </div>
+              </div>
+              <p class="feedback__card__text">
+                Thirty for remove plenty regard you summer though. He preference
+                Partiality on or continuing in particular principles as. Do
+                believing oh disposing to supported allowance we.
+              </p>
+            </div>
+          </div>
+        </div>
+      </secion>
+
+      <!-- newsletter -->
+      <section id="newsletter">
+        <div class="container">
+          <h2 class="newsletter__title subtitle">
+            Subscribe to the Newsletter
+          </h2>
+          <p class="newsletter__text subtext">
+            Enter your email below to get our daily offers and news
+          </p>
+
+          <form class="newsletter__form">
+            <input id="email" placeholder="Enter your email." type="email" />
+            <button class="newsletter__btn btn">Get Started</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="footer__items">
+          <div class="footer__item">
+            <img
+              src="images/footer/footer-logo.svg"
+              alt="footer logo"
+              width="85"
+              height="33"
+            />
+            <p class="footer__content">
+              On formed merits hunted unable merely by mr whence or.
+            </p>
+          </div>
+
+          <div class="footer__item">
+            <h4 class="footer__title">Home</h4>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">News</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">Team</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__item">
+            <h4 class="footer__title">About</h4>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">News</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">Team</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__item">
+            <h4 class="footer__title">Partner</h4>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">News</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">Team</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__item">
+            <h4 class="footer__title">Contact</h4>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">News</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link">Team</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
